@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#gerador-box {
+    display: flex;
+    border: 1px solid black;
+    margin: 2em;
+    max-height: 100vh;
+}
+
+h2 {
+    text-align: center;
+}
+
+#controles-box,
+#preview {
+    flex: 1;
+    border: 1px solid red;
+}
+
+#controles-box {
+
+}
+
+#preview {}
+
+/* Controles*/
+.form-controls {
+    display: flex;
+    border-bottom: 1px dashed black;
+}
+.form-controls div{
+}
+.form-controls{
+    margin:2rem;
+    padding: 1rem;
+    align-items: center;
+}
+.input-range {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+    flex:2;
+}
+label{
+    font-size: 1.3rem;
+    text-align: center;
+}
+.referencia{
+    text-align: center;
+    font-size: 1rem;
+}

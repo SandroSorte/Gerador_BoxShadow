@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Box-Shadow</title>
+    <link rel="stylesheet" href="stylo.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="gerador-box">
+        <div id="controles-box">
+            <h2>Configurações - title</h2>
+            <div class="form-controls">
+                <div class="input-range">
+                    <label for="horizontal">Deslocamento horizontal</label>
+                    <input type="range" id="horizontal" name="horizontal" min="-100" max="100">
+                </div>
+                <div class="referencia">
+                    <input type="text" id="hr-valor" name="hr-valor" value="5">
+                </div>
+            </div>
+            <div class="form-controls">
+                <div class="input-range">
+                    <label for="vertical">Deslocamento vertical</label>
+                    <input type="range" id="vertical" name="vertical" min="-100" max="100">
+                </div>
+                <div class="referencia">
+                    <input type="text" id="vt-valor" name="vt-valor" value="5">
+                </div>
+            </div>
+            <div class="form-controls">
+                <div class="input-range">
+                    <label for="blur">Intensidade do borrao (blur)</label>
+                    <input type="range" id="blur" name="blur" min="0" max="100">
+                </div>
+                <div class="referencia">
+                    <input type="text" id="hr-valor" name="hr-valor" value="5">
+                </div>
+            </div>
+            <div class="form-controls">
+                <div class="input-range">
+                    <label for="spread">Intensidade do espalhamento(spread)</label>
+                    <input type="range" id="spread" name="spread" min="-100" max="100">
+                </div>
+                <div class="referencia">
+                    <input type="text" id="hr-valor" name="hr-valor" value="3">
+                </div>
+            </div>
+        </div>
+        <div id="preview">
+            <h2>Preview do efeito gerado</h2>
+            <div id="box"></div>
+        </div>
+    </div>
+    <div id="generated-rule">
+        <h2>Copie e cole no seu arquivo CSS</h2>
+        <div id="rules-area">
+            <p id="rule"><span>Box-shadow</span></p>
+            <p id="webkit-rule">-webkit-Box Shadow<span></span></p>
+            <p id="moz-rule"><span>-moz-Box Shadow</span></p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
