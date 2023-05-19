@@ -18,10 +18,20 @@
         <div id="config">
             <div id="control">
                 <h2>Configurações da box-shadow</h2>
-                <div class="select">
+                <div class="select"> 
                     <div class="adjust">
                         <label for="horizontal">Deslocamento horizontal</label>
-                        <input type="range">
+                        <input type="range" min="-100" max="100" value="5">
+                    </div>
+                    <div class="view">
+                        <input type="text" value="5">
+                        <p>px</p>
+                    </div>
+                </div>
+                <div class="select"> 
+                    <div class="adjust">
+                        <label for="vertical">Deslocamento vertical</label>
+                        <input type="range" min="-100" max="100" value="5">
                     </div>
                     <div class="view">
                         <input type="text" value="5">
@@ -30,53 +40,47 @@
                 </div>
                 <div class="select">
                     <div class="adjust">
-                        <label for="vertical">Deslocamento vertical</label>
-                        <input type="range">
-                    </div>
-                    <div class="view">
-                        <input type="text" value="5"><span>px</span>
-                    </div>
-                </div>
-                <div class="select">
-                    <div class="adjust">
                         <label for="blur">Intensidade da sombra (blur)</label>
-                        <input type="range">
+                        <input type="range" min="0" max="100" value="0">
                     </div>
                     <div class="view">
-                        <input type="text" value="5"><span>px</span>
+                        <input type="text" value="0">
+                        <p>px</p>
                     </div>
                 </div>
-                <div class="select">
+                <div class="select"> 
                     <div class="adjust">
                         <label for="spread">Intensidade do borrão (spread)</label>
-                        <input type="range">
+                        <input type="range" min="-100" max="100" value="5" >
                     </div>
                     <div class="view">
-                        <input type="text" value="5"><span>px</span>
+                        <input type="text" value="5">
+                        <p>px</p>
                     </div>
                 </div>
-                <div class="select">
+                <div class="select"> 
                     <div class="adjust">
                         <label for="opacity">Opacidade</label>
-                        <input type="range">
+                        <input type="range" min="0" max="100" value="0">
                     </div>
                     <div class="view">
-                        <input type="text" value="5"><span>px</span>
+                        <input type="text" value="0">
+                        <p>px</p>
                     </div>
                 </div>
-                <div class="select">
+                <div id="select">
                     <div id="color">
-                        <div class="">
+                        <div>
                             <label for="color">Cor da sombra</label>
                             <input type="color">
                         </div>
-                        <div class="view">
-                            <input type="text" value="#25F62F">
+                        <div id="view">
+                            <input id="rgb" type="text" value="#25F62F">
                         </div>
                     </div>
-                    <div id="sombra">
-                        <div class="adjust">
-                            <label for="horizontal">Sombra interna (inset)</label>
+                    <div>
+                        <div id="sombra">
+                            <label for="horizontal">Sombra interna (inset):</label>
                             <input type="checkbox">
                         </div>
                     </div>
