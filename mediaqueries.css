@@ -1,44 +1,105 @@
 @media screen and (max-width:575px) {
-    #title-top {
-        display: none;
-    }
-
     #title-config {
         display: none;
     }
 }
 
-@media screen and (min-width:576px) and (max-width:767px) {
-    #title-bottom {
-        display: none;
+@media screen and (min-width:576px) and (max-width:850px) {
+    #square{
+        width: 250px;
+        height: 200px;
     }
-
-    #title-top,
-    h5 {
+    #control{
+        padding: 1em;
+    }
+    label{
+        font-size: 1.5em;
+    }
+    h5{
         font-size: 1.2em;
     }
-
-    header {
+    header{
         font-size: 1.5em;
-    }
-
-    label {
-        font-size: 1.5em;
-    }
-
-    #select {
-        justify-content: space-evenly;
-    }
-
-    #square {
-        width: 50%;
-        height: 70%;
-    }
-
-    p {
-        font-size: 1em;
     }
 }
-@media screen and (min-width:768px) and (max-width:991px) {
-    
+@media screen and (min-width:850px) and (max-width:1200px) {
+    main{
+        flex-direction: row;
+    }
+    #display, #control{
+        flex:1
+    }
+    #control{
+        order: 1;
+    }
+    #display{
+        order:2;
+        padding: .8em;
+    }
+    header{
+        font-size: 35px;
+    }
+    label{
+        font-size: 1.7em;
+    }
+    h5{
+        font-size: 1.5em;
+        padding: 0;
+    }
+    #select{
+        gap: 1.5em
+    }
+    #display{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100vh;
+    }
+    #square{
+        width: 250px;
+        height: 250px;
+    }
+}
+@media screen and (min-width:1201px) {
+    main{
+        flex-direction: row;
+        margin:0 30px;
+    }
+    #display, #control{
+        margin-top: 40px;
+        flex:1;
+        height: 100vh;
+    }
+    #control{
+        order: 1;
+        gap:1.5em
+    }
+    #display{
+        order:2;
+        padding: .8em;
+        height: 100%;
+    }
+    header{
+        font-size: 35px;
+    }
+    label{
+        font-size: 1.7em;
+    }
+    h5{
+        font-size: 1.5em;
+        padding: 0;
+    }
+    #select{
+        gap: 3em
+    }
+    #display{
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+    }
+    #square{
+        width: 400px;
+        height: 300px;
+    }
 }

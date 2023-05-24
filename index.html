@@ -8,7 +8,7 @@
     <title>Gerador de Box-Shadow</title>
     <link rel="stylesheet" href="stylo.css">
     <link rel="stylesheet" href="mediaqueries.css">
-    <script src="script.js" defer></script>
+    <script src="boxshadow.js" defer></script>
 </head>
 
 <body>
@@ -18,17 +18,18 @@
     <main>
         <section id="display">
             <h5 id="title-top">Visual aplicado</h5>
-            <div id="box">
-                <div id="square"></div>
+            <div id="square"></div>
+            <div id="result">
+                <label>Código:</label>
+                <input type="text" id="code" onclick="this.select()" readonly>
             </div>
-            <h5 id="title-bottom">Visual aplicado</h5>
         </section>
         <section id="control">
             <h5 id="title-config">Configurações da box-shadow</h5>
             <div class="select">
                 <div class="adjust">
                     <label for="horizontal">Deslocamento horizontal</label>
-                    <input type="range" id="horizontal" name="horizontal" min="-100" max="100" value="5">
+                    <input type="range" id="horizontal" name="horizontal" min="-50" max="50" value="2">
                 </div>
                 <div class="view">
                     <input type="text" id="horizontal-value" name="horizontal-value">
@@ -38,7 +39,7 @@
             <div class="select">
                 <div class="adjust">
                     <label for="vertical">Deslocamento vertical</label>
-                    <input type="range" id="vertical" min="-100" max="100" value="5">
+                    <input type="range" id="vertical" min="-50" max="50" value="5">
                 </div>
                 <div class="view">
                     <input type="text" id="vertical-value" name="vertical-value">
@@ -58,7 +59,7 @@
             <div class="select">
                 <div class="adjust">
                     <label for="spread">Intensidade do borrão (spread)</label>
-                    <input type="range" id="spread" min="-100" max="100" value="3">
+                    <input type="range" id="spread" min="0" max="50" value="3">
                 </div>
                 <div class="view">
                     <input type="text" id="spread-value" name="spread-value">
@@ -79,7 +80,7 @@
                 <div id="color">
                     <div>
                         <label for="color">Cor da sombra</label>
-                        <input type="color" id="color" value="#000000">
+                        <input type="color" id="cor" value="#000000">
                     </div>
                     <div id="view">
                         <input id="rgb" type="text" value="#25F62F">
@@ -90,101 +91,6 @@
                     <input type="checkbox">
                 </div>
         </section>
-        <section id="result">
-            <h5>Copie e cole no seu arquivo CSS</h5>
-            <div id="code">
-                <p>Normal Lorem ipsum dolor sit amet.</p>
-                <p>Webkit Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                <p>Moz Lorem ipsum dolor sit amet consectetur.</p>
-            </div>
-        </section>
-        <!--
-        <div id="config">
-            <div id="control">
-                <h2>Configurações da box-shadow</h2>
-                <div class="select"> 
-                    <div class="adjust">
-                        <label for="horizontal">Deslocamento horizontal</label>
-                        <input type="range" id="horizontal"  name="horizontal" min="-100" max="100" value="5">
-                    </div>
-                    <div class="view">
-                        <input type="text" id="horizontal-value" name="horizontal-value" >
-                        <p>px</p>
-                    </div>
-                </div>
-                <div class="select"> 
-                    <div class="adjust">
-                        <label for="vertical">Deslocamento vertical</label>
-                        <input type="range" id="vertical" min="-100" max="100" value="5">
-                    </div>
-                    <div class="view">
-                        <input type="text" id="vertical-value" name="vertical-value" >
-                        <p>px</p>
-                    </div>
-                </div>
-                <div class="select">
-                    <div class="adjust">
-                        <label for="blur">Intensidade da sombra (blur)</label>
-                        <input type="range" id="blur" min="0" max="100" value="10">
-                    </div>
-                    <div class="view">
-                        <input type="text" id="blur-value" name="blur-value">
-                        <p>px</p>
-                    </div>
-                </div>
-                <div class="select"> 
-                    <div class="adjust">
-                        <label  for="spread">Intensidade do borrão (spread)</label>
-                        <input  type="range" id="spread"  min="-100" max="100" value="3" >
-                    </div>
-                    <div class="view">
-                        <input type="text" id="spread-value" name="spread-value">
-                        <p>px</p>
-                    </div>
-                </div>
-                <div class="select"> 
-                    <div class="adjust">
-                        <label for="opacity">Opacidade</label>
-                        <input type="range" min="0" max="100" value="0">
-                    </div>
-                    <div class="view">
-                        <input type="text" value="0">
-                        <p>px</p>
-                    </div>
-                </div>
-                <div id="select">
-                    <div id="color">
-                        <div>
-                            <label for="color">Cor da sombra</label>
-                            <input type="color" id="color" value="#000000">
-                        </div>
-                        <div id="view">
-                            <input id="rgb" type="text" value="#25F62F">
-                        </div>
-                    </div>
-                    <div>
-                        <div id="sombra">
-                            <label for="horizontal">Sombra interna (inset):</label>
-                            <input type="checkbox">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="display">
-                <h2>Preview do efeito gerado</h2>
-                <div id="box"></div>
-                <div id="result">
-                    <h2>Copie e cole no seu arquivo CSS</h2>
-                    <div id="code">
-                        <p>Normal Lorem ipsum dolor sit amet.</p>
-                        <p>Webkit Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                        <p>Moz Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
-                    <p>Clique no quadrado acima para copiar as regras</p>
-                </div>
-            </div>
-        </div>
-        -->
     </main>
     <footer></footer>
 </body>

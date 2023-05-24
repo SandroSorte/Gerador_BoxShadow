@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-header, h5, h2{
+header,h5, h2{
     text-align: center;
     padding: 0.5em;
 }
@@ -13,16 +13,29 @@ main{
     gap:1.2em;
 }
 /*Display*/
-#box{
+#display{
     display: flex;
-    height: 50vh;
-    justify-content: center;
-    align-items:center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 60vh;
 }
 #square{
-    width: 60%;
-    height: 60%;
+    width: 200px;
+    height: 150px;
     background-color: aqua;
+    border-radius: 4px;
+}
+#code{
+    padding: 3px;
+    width: 200px;
+    text-align: center;
+}
+#result{
+    display: flex;
+    margin: 3px;
+    align-items: center;
+    gap: 4px;
 }
 /*Control*/
 #control{
@@ -76,23 +89,4 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-/*Resultado*/
-
-#result{
-    display: flex;
-    flex-flow: column wrap;
-    gap:0.5em;
-    margin-bottom: 0.5em;
-}
-
-#code{
-    display: flex;
-    flex-flow: column wrap;
-    gap:0.5em;
-    background-color: bisque;
-    border: 1px solid blue;
-    align-items: center;
-    padding: 0.5em;
 }
