@@ -19,7 +19,7 @@ function updateBoxShadow(){
     vtf.value = vt.value
     blf.value = bl.value
     spf.value = sp.value
-    color.value = colorf.value
+    colorf.value = color.value
     box.style.boxShadow = all;
 }
 [hr, vt, bl, sp, color].forEach(el =>{

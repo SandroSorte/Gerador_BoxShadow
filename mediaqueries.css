@@ -2,32 +2,30 @@
     #title-config {
         display: none;
     }
+    #display{
+        height: 60vh;
+    
+    }
 }
 
 @media screen and (min-width:576px) and (max-width:850px) {
-    #square{
-        width: 250px;
-        height: 200px;
+
+    #display{
+        height: 60vh;
     }
-    #control{
-        padding: 1em;
-    }
-    label{
-        font-size: 1.5em;
-    }
-    h5{
-        font-size: 1.2em;
-    }
-    header{
-        font-size: 1.5em;
+    .view{
+        flex: 1;
     }
 }
 @media screen and (min-width:850px) and (max-width:1200px) {
     main{
         flex-direction: row;
+        align-content: center;
+        margin: 0 60px;
     }
     #display, #control{
-        flex:1
+        flex:1;
+        border-radius: 20px;
     }
     #control{
         order: 1;
@@ -37,10 +35,11 @@
         padding: .8em;
     }
     header{
-        font-size: 35px;
+        font-size: 25px;
+        margin: 30px;
     }
     label{
-        font-size: 1.7em;
+        font-size: 1em;
     }
     h5{
         font-size: 1.5em;
@@ -53,23 +52,25 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        height: 100vh;
+        height: 80vh;
+        border: 2px solid rgb(235, 229, 229);
+        box-shadow: 1px 2px 4px 2px rgb(218, 215, 215);
     }
     #square{
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 150px;
     }
 }
 @media screen and (min-width:1201px) {
     main{
         flex-direction: row;
-        margin:0 30px;
+        align-content: center;
+        margin: 0 80px;
     }
+
     #display, #control{
-        margin-top: 40px;
         flex:1;
-        height: 100vh;
+        border-radius: 20px;
     }
     #control{
         order: 1;
@@ -79,19 +80,29 @@
         order:2;
         padding: .8em;
         height: 100%;
+        border: 2px solid rgb(235, 229, 229);
+        box-shadow: 1px 2px 4px 2px rgb(218, 215, 215);
     }
     header{
         font-size: 35px;
+        margin:30px 0 40px;
     }
     label{
-        font-size: 1.7em;
+        font-size: 1.3em;
     }
     h5{
         font-size: 1.5em;
-        padding: 0;
     }
     #select{
         gap: 3em
+    }
+    .view{
+        flex:1;
+    }
+    .view input{
+        flex:1;
+        border: none;
+        box-shadow: 0 0 3px 3px rgb(163, 161, 161);
     }
     #display{
         display: flex;
@@ -99,7 +110,7 @@
         height: 80vh;
     }
     #square{
-        width: 400px;
-        height: 300px;
+        width: 350px;
+        height: 250px;
     }
 }
