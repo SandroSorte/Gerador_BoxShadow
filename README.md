@@ -2,4 +2,4 @@
 
 https://sandrosorte.github.io/Gerador_BoxShadow/
 
-![image](https://github.com/SandroSorte/Gerador_BoxShadow/assets/108229719/0d400059-47ca-412c-95d6-533989a04260)
+![image](https://github.com/SandroSorte/Gerador_BoxShadow/assets/108229719/3e79f387-0df5-4797-b204-9cdc98449092)
